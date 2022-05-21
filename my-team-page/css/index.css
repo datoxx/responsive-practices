@@ -1,0 +1,136 @@
+/* fonts */
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
+/* base class*/
+.container {
+    max-width: 925px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* header */
+.header {
+    margin-top: 110px;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper h1 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em; 
+    color: #000000;
+}
+
+.heaer-block {
+    display: flexbox;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.heaer-block h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.heaer-block p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+/*main section*/
+.main {
+    margin-top: 96px;
+}
+
+.boxs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 264px;
+    margin-bottom: 120px;
+}
+
+.box:nth-child(2), .box:nth-child(5) {
+    margin-top: 100px;
+}
+
+.person-wraper {
+    display: flex;
+    align-items:flex-start;
+    margin-bottom: 20px;
+}
+
+.person-wraper img {
+    max-width: 238px;
+    width: 100%;
+}
+
+.profesion {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #000000;
+    transform: rotate(90deg);
+    transform-origin: 7%;
+}
+
+.name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+/* footer */
+footer p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A9A9A9;
+    margin-bottom: 24px;
+}
+
+/* responsive */
+@media (max-width: 380px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    h1 {
+        margin-bottom: 40px;
+    }
+    .boxs-wrapper {
+        justify-content: space-around;
+    }
+    .box {
+       width: 145px;
+    }
+}
+
+
