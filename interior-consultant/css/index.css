@@ -1,0 +1,267 @@
+/* fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Montserrat:wght@500&family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Montserrat:wght@500;700&family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500&family=Montserrat:wght@500;700&family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
+/*base class*/ 
+body {
+    background: #181719;
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*header*/ 
+.header {
+    margin-top: 42px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 12px;
+    border: 1px solid #FFFFFF;
+}
+
+.logo h3 {
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF; 
+}
+
+.icon {
+    display: none;
+    margin-right: 2%;
+}
+
+.fa-bars  {
+    color: #F2F2F2;
+    
+}
+
+.nav {
+    width: 537px;
+}
+
+.list-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.page-name:focus {
+    font-weight: 700;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+/*main*/
+.main {
+    margin-top: 153px;;
+}
+
+.main-wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    align-self: center;
+    max-width: 410px;
+}
+
+.article h1 {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+.article p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 40px 0px 48px 0px;
+    color: #FFFFFF;
+}
+
+.article span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.image-wrapper {
+    max-width: 737px;
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+}
+
+/*consultant */
+.consultant {
+    position: absolute;
+    width: 390px;
+    height: 189px;
+    left: 42.2%;
+    top: 87%;
+    padding: 14px;
+    background: #181719;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.img-info {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.consultant-img {
+    max-width: 85px;
+}
+
+.consultant-img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name-profesion-div {
+    margin-left: 15px;
+    align-self: center;
+}
+
+.name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px; 
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.profesion {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+}
+
+.consultant-text {
+    font-family: 'Lora';
+    font-style: normal;
+    width: 287px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    margin-top: 13px;
+    color: #FFFFFF;
+}
+/* main */
+
+/*footer*/
+.footer p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin: 270px 0 24px 0;
+    color: #A9A9A9;
+
+}
+
+
+/*responsive*/
+@media (max-width: 375px) {
+    .nav {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+    .main-wrapp {
+        flex-direction: column;
+    }
+
+    .article {
+        margin-bottom: 25px;
+    }
+
+    .article h1 {
+        width: 274px;
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .article p {
+        font-size: 14px;
+        line-height: 17px;
+        width: 250px;
+    }
+
+    .article span {
+        font-size: 14px;
+        line-height: 17px;
+        width: 80px;
+    }
+    .image-wrapper {
+        width: 360px;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+    
+    .consultant {
+        top: 83%;
+        left: 14%;
+        width: 290px;
+    }
+    .consultant-img {
+        width: 62.2px;
+        height: 52.68px;
+    }
+    .name {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    .profesion {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    
+    .consultant-text {
+        width: 210px;
+        height: 45px;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
